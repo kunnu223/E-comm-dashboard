@@ -88,7 +88,7 @@ app.get('/search/:key' , async (req,res)=>{
 
 
 app.get('*' , function (req , res){
-   res.sendfile(path.join(__dirname , "./D-project/dist/index.html"))
+   res.sendFile(path.join(__dirname , "./D-project/dist/index.html"))
 })
 
 app.listen(3000); 
